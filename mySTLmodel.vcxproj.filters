@@ -21,7 +21,7 @@
     <ClCompile Include="src\myString.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\myVector.cpp">
+    <ClCompile Include="src\Vector.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -29,7 +29,7 @@
     <ClInclude Include="src\myString.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="src\myVector.h">
+    <ClInclude Include="src\Vector.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
