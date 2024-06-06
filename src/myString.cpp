@@ -238,7 +238,8 @@ void myString::pop_back() {
 
 void myString::insert(char ch, size_t pos)
 {
-	if (pos > this->m_size) {
+	if (pos > this->m_size) 
+	{
 		throw std::out_of_range("Position out of range");
 	}
 
@@ -256,7 +257,8 @@ void myString::insert(char ch, size_t pos)
 	this->m_data[this->m_size + 1] = '\0';
 }
 
-void myString::insert(const char* s, size_t pos) {
+void myString::insert(const char* s, size_t pos) 
+{
 	if (pos > this->m_size) {
 		throw std::out_of_range("Position out of range");
 	}

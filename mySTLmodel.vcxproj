@@ -153,11 +153,12 @@
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\myString.cpp" />
-    <ClCompile Include="src\Vector.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Array.h" />
+    <ClInclude Include="src\myList.h" />
     <ClInclude Include="src\myString.h" />
-    <ClInclude Include="src\Vector.h" />
+    <ClInclude Include="src\myVector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

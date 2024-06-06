@@ -21,15 +21,18 @@
     <ClCompile Include="src\myString.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\Vector.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\myString.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="src\Vector.h">
+    <ClInclude Include="src\myVector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Array.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\myList.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

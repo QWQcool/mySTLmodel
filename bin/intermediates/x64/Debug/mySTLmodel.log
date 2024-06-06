@@ -1,13 +1,5 @@
 ﻿  main.cpp
-C:\Users\licuocuo\Desktop\Desktop\code\VSC++\mySTLmodel\src\main.cpp(42,7): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-C:\Users\licuocuo\Desktop\Desktop\code\VSC++\mySTLmodel\src\main.cpp(44,9): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-C:\Users\licuocuo\Desktop\Desktop\code\VSC++\mySTLmodel\src\main.cpp(48,12): warning C4305: “参数”: 从“int”到“const char”截断
-C:\Users\licuocuo\Desktop\Desktop\code\VSC++\mySTLmodel\src\main.cpp(48,12): warning C4309: “参数”: 截断常量值
-  myString.cpp
-C:\Users\licuocuo\Desktop\Desktop\code\VSC++\mySTLmodel\src\myString.cpp(248,10): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-C:\Users\licuocuo\Desktop\Desktop\code\VSC++\mySTLmodel\src\myString.cpp(263,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-C:\Users\licuocuo\Desktop\Desktop\code\VSC++\mySTLmodel\src\myString.cpp(267,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-  myVector.cpp
-  正在生成代码...
-  LINK : 没有找到 C:\Users\licuocuo\Desktop\Desktop\code\VSC++\mySTLmodel\bin\x64\Debug\mySTLmodel.exe 或上一个增量链接没有生成它；正在执行完全链接
+C:\Users\licuocuo\Desktop\Desktop\code\VSC++\mySTLmodel\src\main.cpp(42,20): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\licuocuo\Desktop\Desktop\code\VSC++\mySTLmodel\src\main.cpp(43,18): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\licuocuo\Desktop\Desktop\code\VSC++\mySTLmodel\src\main.cpp(44,18): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
   mySTLmodel.vcxproj -> C:\Users\licuocuo\Desktop\Desktop\code\VSC++\mySTLmodel\bin\x64\Debug\mySTLmodel.exe
