@@ -11,7 +11,7 @@ public:
 	myString(const myString& str);  //Éî¿½±´
 	~myString();
 	size_t length() const { return m_size; }
-	size_t size() const { return m_size; }
+	size_t _index() const { return m_size; }
 	size_t capacity() const { return m_capacity; }
 	const char* c_str()const { return m_data; }
 	char* begin() { return m_data; }

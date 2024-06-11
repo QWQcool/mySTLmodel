@@ -1,5 +1,2 @@
-﻿  main.cpp
-C:\Users\licuocuo\Desktop\Desktop\code\VSC++\mySTLmodel\src\main.cpp(42,20): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-C:\Users\licuocuo\Desktop\Desktop\code\VSC++\mySTLmodel\src\main.cpp(43,18): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-C:\Users\licuocuo\Desktop\Desktop\code\VSC++\mySTLmodel\src\main.cpp(44,18): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+﻿  vectest.cpp
   mySTLmodel.vcxproj -> C:\Users\licuocuo\Desktop\Desktop\code\VSC++\mySTLmodel\bin\x64\Debug\mySTLmodel.exe

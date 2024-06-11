@@ -18,39 +18,45 @@ int main()
     }
     v.operator[](9) = 333;
     v.erase(9);
-    for (int i = 0; i < 10; ++i)
-    {
-        std::cout << v[i] << " ";
-        if (i == 9)printf("\n");
-    }
-    Int_Vector v1(v);
+    //for (int i = 0; i < 10; ++i)
+    //{
+    //    std::cout << v[i] << " ";
+    //    if (i == 9)printf("\n");
+    //}
+    //Int_Vector v1(v);
 
-    v1[9] = 9;
-    for (int i = 0; i < 10; ++i)
-    {
-        std::cout << v1[i] << " ";
-        if (i == 9)printf("\n");
-    }
+    //v1[9] = 9;
+    //for (int i = 0; i < 10; ++i)
+    //{
+    //    std::cout << v1[i] << " ";
+    //    if (i == 9)printf("\n");
+    //}
+    //auto begin = v1.begin();
+    //auto end = v1.end();
+    //std::cout <<"iterator:" << std::endl;
+    //for (;begin != end; ++begin)
+    //{
+    //    std::cout << *begin << " " << std::endl;
+    //}
+    //myString str = "Hello";
+    //myString str1 = "Hello";
+    //str += "World";
+    //str += str1;
+    //str = str + str1;
+    //str[9] = 'a';
+    //const char* C_Str1 = str1.c_str();
+    //int Str_Length =str.length();
+    //int Str_Size = str._index();
+    //int Find_Pos = str.find("Hello");
+    //std::cout << "C_Str:"<<C_Str1 << " Str_Length:" << Str_Length << " Str_Size:" << Str_Size <<" Find_Pos:" << Find_Pos << std::endl;
+    //std::cout << "str:" << str << std::endl;
 
-    myString str = "Hello";
-    myString str1 = "Hello";
-    str += "World";
-    str += str1;
-    str = str + str1;
-    str[9] = 'a';
-    const char* C_Str1 = str1.c_str();
-    int Str_Length =str.length();
-    int Str_Size = str.size();
-    int Find_Pos = str.find("Hello");
-    std::cout << "C_Str:"<<C_Str1 << " Str_Length:" << Str_Length << " Str_Size:" << Str_Size <<" Find_Pos:" << Find_Pos << std::endl;
-    std::cout << "str:" << str << std::endl;
-
-    Int_Double_List DL;
-    for (int i = 0; i < 10; i++)
-    {
-        DL.Tail_Insert(i);
-    }
-    std::cout << "DL.Print:";
-    DL.Print();
+    //Int_Double_List DL;
+    //for (int i = 0; i < 10; i++)
+    //{
+    //    DL.Tail_Insert(i);
+    //}
+    //std::cout << "DL.Print:";
+    //DL.Print();
     return 0;
 }

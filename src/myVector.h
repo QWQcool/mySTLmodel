@@ -82,7 +82,8 @@ public:
         }
         --_size;
     }
-    void ReAlloc(int newCapacity) {
+    void ReAlloc(int newCapacity) 
+    {
         int* newBlock = new int[newCapacity];
         if (newCapacity < _size)
             _size = newCapacity;
@@ -92,12 +93,70 @@ public:
         _pArr = newBlock;
         _capacity = newCapacity;
     }
-    void display() const {
+    void display() const 
+    {
         for (int i = 0; i < _size; ++i) {
             std::cout << _pArr[i] << " ";
         }
         std::cout << std::endl;
     }
+
+    // 迭代器类
+    class Iterator {
+    public:
+        int* _ptr;
+        int _index;
+
+    public:
+        Iterator(int* p, int s) :_ptr(p), _index(s) {}
+
+        int& operator*() {
+            return _ptr[_index];
+        }
+
+        Iterator& operator++() {
+            ++_index;
+            return *this;
+        }
+
+        Iterator& operator--() {
+            --_index;
+            return *this;
+        }
+
+        bool operator!=(const Iterator& other) const {
+            return _index != other._index;
+        }
+
+        Iterator operator+(int n)
+        {
+            return Iterator(_ptr, _index + n);
+        }
+    };
+
+    Iterator erase(Iterator it)
+    {
+        // 移动元素
+        for (int i = it._index; i < _size - 1; ++i) {
+            _pArr[i] = _pArr[i + 1];
+        }
+
+        // 更新大小
+        --_size;
+        return Iterator(_pArr, it._index);
+    }
+    // 返回一个指向第一个元素的迭代器
+    Iterator begin()
+    {
+        return Iterator(_pArr, 0);
+    }
+
+    // 返回一个指向最后一个元素之后的位置的迭代器
+    Iterator end()
+    {
+        return Iterator(_pArr, _size);
+    }
+
 };
 
 template <class T>
