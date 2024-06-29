@@ -204,3 +204,90 @@ public:
     }
 
 };
+
+template<class T>
+class List
+{
+private:
+    struct Node
+    {
+        T val;
+        Node* next;
+    };
+    Node* head;
+
+public:
+    List() : head(nullptr) {}
+
+    ~List()
+    {
+        Node* current = head;
+        while (current != nullptr)
+        {
+            Node* nextNode = current->next;
+            delete current;
+            current = nextNode;
+        }
+    }
+
+    void Insert(int value)
+    {
+        Node* newNode = new Node;
+        newNode->val = value;
+        newNode->next = nullptr;
+
+        if (head == nullptr)
+        {
+            head = newNode;
+        }
+        else
+        {
+            Node* lastNode = head;
+            while (lastNode->next != nullptr)
+            {
+                lastNode = lastNode->next;
+            }
+            lastNode->next = newNode;
+        }
+    }
+
+    void PrintList()
+    {
+        Node* current = head;
+        while (current != nullptr)
+        {
+            std::cout << current->val << " ";
+            current = current->next;
+        }
+        std::cout << std::endl;
+    }
+
+    bool DeleteNode(int value)
+    {
+        Node* current = head;
+        Node* previous = nullptr;
+
+        while (current != nullptr && current->val != value)
+        {
+            previous = current;
+            current = current->next;
+        }
+
+        if (current == nullptr)
+        {
+            return false; // 没有找到值为value的节点
+        }
+
+        if (previous == nullptr)
+        {
+            head = current->next;
+        }
+        else
+        {
+            previous->next = current->next;
+        }
+
+        delete current;
+        return true;
+    }
+};

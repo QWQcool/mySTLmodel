@@ -199,6 +199,62 @@ public:
         return m_Data[index];
     }
 
+    // 迭代器类
+    class Iterator {
+    public:
+        T* m_Data;
+        int _index;
+
+    public:
+        Iterator(T* p, int s) :m_Data(p), _index(s) {}
+
+        T& operator*() {
+            return m_Data[_index];
+        }
+
+        Iterator& operator++() {
+            ++_index;
+            return *this;
+        }
+
+        Iterator& operator--() {
+            --_index;
+            return *this;
+        }
+
+        bool operator!=(const Iterator& other) const {
+            return _index != other._index;
+        }
+
+        Iterator operator+(int n)
+        {
+            return Iterator(m_Data, _index + n);
+        }
+    };
+
+    Iterator erase(Iterator it)
+    {
+        // 移动元素
+        for (int i = it._index; i < m_Size - 1; ++i) {
+            m_Data[i] = m_Data[i + 1];
+        }
+
+        // 更新大小
+        --m_Size;
+        return Iterator(m_Data, it._index);
+    }
+    // 返回一个指向第一个元素的迭代器
+    Iterator begin()
+    {
+        return Iterator(m_Data, 0);
+    }
+
+    // 返回一个指向最后一个元素之后的位置的迭代器
+    Iterator end()
+    {
+        return Iterator(m_Data, m_Size);
+    }
+
 private:
     void ReAlloc(size_t newCapacity) {
         T* newBlock = new T[newCapacity];
